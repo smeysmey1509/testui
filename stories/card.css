@@ -1,0 +1,56 @@
+* {
+  font-family: "sans-serif";
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 250px;
+  height: auto;
+  background-color: #f8f9fa;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  list-style-type: none;
+  padding: 8px 18px;
+  margin: 0;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 5%;
+  cursor: pointer;
+}
+
+.card ul li:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  color: #1a73e8;
+}
+
+.card-title {
+  font-weight: 600;
+  padding: 8px 18px;
+  border-bottom: 1px solid blanchedalmond;
+}
+
+.card-li-icon {
+  color: #1a73e8;
+  /* margin-right: 8px; */
+  font-size: 16px;
+}
+
+.card-li-label {
+  font-size: 14px;
+}
+
+.card-li-label:hover {
+  font-size: 14px;
+}
