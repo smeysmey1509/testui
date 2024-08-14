@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StoryBook</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="head">
+      <div class="left">left</div>
+      <div class="right"></div>
+    </section>
+    <script src="./stories/Button.js"></script>
+    <script>
+      const rightDev = document.querySelector(".right");
+      const myButton = Button("Click", () => alert("Button Clicked"));
+      rightDev.appendChild(myButton);
+    </script>
+  </body>
+  <footer></footer>
 </html>

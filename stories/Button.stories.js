@@ -1,14 +1,12 @@
 import { fn } from "@storybook/test";
 import { createButton } from "./Button";
-import { color } from "storybook/internal/theming";
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest";
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
   title: "Example/Button",
   tags: ["autodocs"],
   render: ({ label, ...args }) => {
-    // You can either use a function to create DOM elements or use a plain html string!
-    // return `<div>${label}</div>`;
     return createButton({ label, ...args });
   },
   argTypes: {
@@ -22,7 +20,6 @@ export default {
       options: ["small", "medium", "large"],
     },
   },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
 };
 
@@ -32,6 +29,14 @@ export const Primary = {
     primary: true,
     label: "Button",
   },
+};
+
+Primary.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const primaryButton = await canvas.getByRole("button", { name: /Button/i });
+
+  // Verify the button text is correctait expect(primaryButton).toHaveTextContent("Button");
+  await expect(primaryButton).toHaveTextContent("Button");
 };
 
 export const Secondary = {
@@ -74,6 +79,16 @@ export const Update = {
   args: {
     primary: true,
     label: "Update",
-    color: "#4823b0",
+    color: "#ffffff",
   },
+};
+
+export const Aaa = {
+  args: {
+    primary: true,
+    label: "Button",
+    color: "#a62a2a",
+    backgroundColor: "#944f4f",
+    size: "medium"
+  }
 };

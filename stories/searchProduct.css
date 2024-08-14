@@ -1,0 +1,29 @@
+.search-product {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(91, 190, 190);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.fa-filter {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.product-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}

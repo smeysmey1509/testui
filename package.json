@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "build-storybook",
+    "test-storybook": "test-storybook"
   },
   "keywords": [],
   "author": "",
@@ -14,13 +15,17 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
     "@storybook/addon-essentials": "^8.2.8",
-    "@storybook/addon-interactions": "^8.2.8",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-jest": "^8.2.9",
     "@storybook/addon-links": "^8.2.8",
+    "@storybook/addon-storysource": "^8.2.9",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
     "@storybook/blocks": "^8.2.8",
     "@storybook/html": "^8.2.8",
     "@storybook/html-webpack5": "^8.2.8",
+    "@storybook/jest": "^0.2.2",
     "@storybook/test": "^8.2.8",
+    "@storybook/testing-library": "^0.2.1",
     "storybook": "^8.2.8"
   },
   "dependencies": {

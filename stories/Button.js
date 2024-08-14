@@ -1,3 +1,4 @@
+import { Button } from "storybook/internal/components";
 import "./button.css";
 
 export const createButton = ({
@@ -25,3 +26,5 @@ export const createButton = ({
 
   return btn;
 };
+
+window.Button = Button;
