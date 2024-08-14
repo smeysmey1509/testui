@@ -18,7 +18,7 @@ export const Default = {
     titleHeading: "Hello Teat hz",
     titlePara: "hellooooooo",
     fontSize: "17px",
-    color: "hsla(60, 69%, 33%, 1)",
+    color: "hsla(184, 29%, 36%, 1)",
   },
   render: (args) => createBanner(args),
 };
