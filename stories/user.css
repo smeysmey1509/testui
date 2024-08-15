@@ -1,0 +1,42 @@
+.user-table {
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.user-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(190, 189, 189);
+}
+.user-table table th {
+  /* border-top: 1px solid rgb(190, 189, 189); */
+  border-bottom: 1px solid rgb(190, 189, 189);
+  /* border: 1px solid #dddddd; */
+  text-align: center;
+  font-size: 12px;
+  padding: 18px 12px;
+  border-collapse: collapse;
+}
+.user-table table td {
+  border-bottom: 1px solid #dddddd;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 12px;
+  overflow-y: auto;
+  border-collapse: collapse;
+}
+
+.permission-checkbox {
+  width: 14px;
+  height: 18px;
+}
+
+.permission-checkbox.checked {
+  background-color: lightgreen;
+  border: 1px solid rgb(96, 194, 96);
+}
+
+.permission-checkbox:not(:checked) {
+  background-color: white;
+}
