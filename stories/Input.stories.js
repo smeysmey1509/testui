@@ -2,9 +2,9 @@ import { createInput } from "./Input";
 
 export default {
   title: "Input",
-  parameters: {
-    layout: "centered",
-  },
+  // parameters: {
+  //   layout: "centered",
+  // },
 };
 
 const Template = (args) => {

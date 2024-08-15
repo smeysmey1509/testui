@@ -5,6 +5,13 @@ export const createInput = ({
   placeholder = "Search here ...",
   onChange,
 }) => {
+
+  const searchInput = document.createElement('div')
+  searchInput.classList = 'searchInput'
+
+  const searchIcon = document.createElement('i')
+  searchIcon.classList = 'fa-solid fa-magnifying-glass'
+
   const input = document.createElement("input");
   input.type = type;
   input.placeholder = placeholder;
@@ -16,5 +23,8 @@ export const createInput = ({
     });
   }
 
-  return input;
+  searchInput.appendChild(searchIcon)
+  searchInput.appendChild(input)
+
+  return searchInput;
 };

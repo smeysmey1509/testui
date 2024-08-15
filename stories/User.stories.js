@@ -4,13 +4,13 @@ import { createUser } from "./User";
 export default {
   title: "Component/User",
   tags: ["autodocs"],
-  //   parameters: {
-  //     layout: "centered",
-  //   },
+    parameters: {
+      layout: "centered",
+    },
 };
 
 const Template = (args) => {
-  return createUser(args.columns);
+  return createUser(args);
 };
 
 export const Default = Template.bind({});

@@ -1,22 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StoryBook</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
-    <section class="head">
-      <div class="left">left</div>
-      <div class="right"></div>
-    </section>
-    <script src="./stories/Button.js"></script>
-    <script>
-      const rightDev = document.querySelector(".right");
-      const myButton = Button("Click", () => alert("Button Clicked"));
-      rightDev.appendChild(myButton);
-    </script>
-  </body>
-  <footer></footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Components</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <h2>Hira R.</h2>
+            <p>UX/UI Designer</p>
+            <div class="stats">
+                <div>125 <span>Projects</span></div>
+                <div>$124 <span>Revenue</span></div>
+            </div>
+        </div>
+
+        <!-- Revenue Card -->
+        <div class="revenue-card">
+            <div class="revenue-content">
+                <p>Total Revenue</p>
+                <h2>$92,983</h2>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu-card">
+            <ul>
+                <li>Dashboard</li>
+                <li>Email</li>
+                <li>Calendar</li>
+                <li>Graph</li>
+                <li>Forms</li>
+            </ul>
+        </div>
+
+        <!-- Slot Card -->
+        <div class="slot-card">
+            <h3>Free Slots Available</h3>
+            <div class="dates">
+                <div>12 <span>June</span></div>
+                <div>18 <span>June</span></div>
+                <div>02 <span>July</span></div>
+            </div>
+        </div>
+
+        <!-- Project Progress -->
+        <div class="progress-card">
+            <h3>Projects Progress</h3>
+            <div class="progress-circle">
+                <span>75%</span>
+            </div>
+        </div>
+
+        <!-- Transaction Detail -->
+        <div class="transaction-card">
+            <p>Transaction Detail</p>
+            <h2>$4,763.40</h2>
+            <p>Available Balance</p>
+            <button class="send-button">Send</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
