@@ -25,6 +25,7 @@
     "@storybook/html-webpack5": "^8.2.8",
     "@storybook/jest": "^0.2.2",
     "@storybook/test": "^8.2.8",
+    "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.1",
     "storybook": "^8.2.8"
   },

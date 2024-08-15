@@ -10,7 +10,7 @@ export default {
     fontSize: { control: "text" },
     items: {
       control: {
-        type: "object", // Use "object" to handle array of objects
+        type: "object",
       },
       description: "Array of items to be displayed in the card",
     },

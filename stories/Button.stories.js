@@ -89,6 +89,6 @@ export const Aaa = {
     label: "Button",
     color: "#a62a2a",
     backgroundColor: "#944f4f",
-    size: "medium"
-  }
+    size: "medium",
+  },
 };
