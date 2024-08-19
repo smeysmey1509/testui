@@ -1,0 +1,8 @@
+.profile-name {
+  width: fit-content;
+  height: fit-content;
+}
+.profile-name h2 {
+  font-size: 32px;
+  font-family: "Arial, Helvetica, sans-serif";
+}

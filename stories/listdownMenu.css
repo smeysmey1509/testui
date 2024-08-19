@@ -1,0 +1,27 @@
+.listdown-menu {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.listdown-title {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.listdown-menu ul {
+  list-style-type: none; /* Remove the default bullet points */
+  padding-left: 0; /* Optional: Remove left padding */
+  margin: 0px;
+}
+
+.listdown-menu ul li::before {
+  content: "-";
+  padding: 8px; /* Space between the dash and the text */
+  color: #000; /* Optional: Set the color of the dash */
+}
+
+.listdown-menu ul li {
+  padding: 9px 0px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}

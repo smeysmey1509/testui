@@ -28,8 +28,7 @@ export const createSearchProduct = ({
     { name: "Tesla Roadster", brand: "Tesla" },
   ];
 
-  const brands = [...new Set(products.map((product) => product.brand))]; // Get unique brands
-
+  const brands = [...new Set(products.map((product) => product.brand))];
   const searchProduct = document.createElement("div");
   searchProduct.classList = "search-product";
   searchProduct.style.backgroundColor = searchProductBackgroundColor;

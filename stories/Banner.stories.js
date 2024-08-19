@@ -32,3 +32,13 @@ export const Hiiii = {
   },
   render: (args) => createBanner(args),
 };
+
+export const Hen = {
+  args: {
+    titleHeading: "Hello Teat hz",
+    titlePara: "aaasd",
+    fontSize: "18px",
+    color: "hsla(133, 100%, 29%, 1)"
+  },
+  render:args => createBanner(args)
+};
