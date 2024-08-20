@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   entry: "./stories/Button.js",
   output: {
-    filename: "button-component.js",
+    filename: "button.bundle.js",
     path: path.resolve(__dirname, "dist"),
     library: "ButtonComponent",
     libraryTarget: "umd",

@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to the CDN-hosted CSS file for the button component -->
+    <link
+      rel="stylesheet"
+      href="https://smeysmey1509.github.io/testui/dist/button-component.css"
+    />
   </head>
   <body>
     <section>
-      <div>ASD</div>
+      <!-- Container where the button will be added -->
+      <div id="button-container"></div>
     </section>
+
+    <!-- Link to the CDN-hosted JavaScript file for the button component -->
+    <script
+      type="module"
+      src="https://smeysmey1509.github.io/testui/dist/button-component.js"
+    ></script>
+    <script type="module">
+      // Import the button component from the CDN-hosted JavaScript file
+      import Button from "https://smeysmey1509.github.io/testui/dist/button-component.js";
+
+      // Create a new button instance
+      const btn = Button({ text: "Click Me", color: "blue" });
+
+      // Append the button to the container
+      document.getElementById("button-container").appendChild(btn);
+    </script>
   </body>
 </html>
